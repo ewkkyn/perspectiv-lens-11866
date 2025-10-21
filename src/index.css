@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Deep blue from logo */
+    --primary: 217 83% 34%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Light background for cards */
+    --secondary: 214 32% 95%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 214 32% 91%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Teal/cyan accent from logo */
+    --accent: 188 85% 43%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Purple from logo */
+    --purple: 271 81% 56%;
+    --purple-foreground: 0 0% 100%;
+
+    /* Gold/amber from logo */
+    --gold: 38 92% 50%;
+    --gold-foreground: 0 0% 100%;
+
+    /* Confidence ratings */
+    --confidence-low: 0 84% 60%;
+    --confidence-medium: 38 92% 50%;
+    --confidence-high: 142 71% 45%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 88%;
+    --input: 214 32% 91%;
+    --ring: 217 83% 34%;
+
+    --radius: 0.75rem;
+
+    /* Glassmorphic effects */
+    --glass-bg: 0 0% 100% / 0.8;
+    --glass-border: 214 32% 88% / 0.3;
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 0 0% 98%;
+
+    --card: 217 33% 17%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 217 33% 17%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 217 83% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 188 85% 43%;
+    --accent-foreground: 0 0% 100%;
+
+    --purple: 271 81% 56%;
+    --purple-foreground: 0 0% 100%;
+
+    --gold: 38 92% 50%;
+    --gold-foreground: 0 0% 100%;
+
+    --confidence-low: 0 84% 60%;
+    --confidence-medium: 38 92% 50%;
+    --confidence-high: 142 71% 45%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 217 83% 45%;
+
+    --glass-bg: 222 47% 11% / 0.8;
+    --glass-border: 217 33% 30% / 0.3;
+    
+    /* Panel specific */
+    --panel-bg: 223 47% 10%;
+    --panel-card: 223 39% 14%;
+    --panel-border: 220 30% 22%;
+    
+    /* Political gradient */
+    --gradient-left: 14 90% 58%;
+    --gradient-right: 328 85% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
