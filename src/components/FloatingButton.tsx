@@ -13,7 +13,7 @@ export const FloatingButton = ({ onClick, isActive }: FloatingButtonProps) => {
     <div
       className={`
         rainbow-border fixed bottom-6 right-6 z-50 
-        w-16 h-16 rounded-full relative
+        w-16 h-16 rounded-full
         ${isActive ? 'scale-110 transition-all duration-300' : isHovered ? 'scale-110 transition-transform duration-300' : ''}
       `}
     >
