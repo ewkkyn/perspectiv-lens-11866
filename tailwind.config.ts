@@ -93,13 +93,13 @@ export default {
         },
         "rainbow": {
           "0%": {
-            backgroundPosition: "0 0",
+            "background-position": "0 0",
           },
           "50%": {
-            backgroundPosition: "400% 0",
+            "background-position": "400% 0",
           },
           "100%": {
-            backgroundPosition: "0 0",
+            "background-position": "0 0",
           },
         },
       },
