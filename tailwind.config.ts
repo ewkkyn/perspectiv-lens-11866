@@ -91,11 +91,23 @@ export default {
             transform: "scale(1.05)",
           },
         },
+        "rainbow": {
+          "0%": {
+            backgroundPosition: "0 0",
+          },
+          "50%": {
+            backgroundPosition: "400% 0",
+          },
+          "100%": {
+            backgroundPosition: "0 0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "gentle-breathe": "gentle-breathe 3s ease-in-out infinite",
+        "rainbow": "rainbow 20s linear infinite",
       },
     },
   },

@@ -125,3 +125,24 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .rainbow-border::before,
+  .rainbow-border::after {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    border-radius: 9999px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    z-index: -1;
+    animation: rainbow 20s linear infinite;
+  }
+  
+  .rainbow-border::after {
+    filter: blur(30px);
+  }
+}
