@@ -91,6 +91,14 @@ export default {
             transform: "scale(1.05)",
           },
         },
+        "breathing": {
+          "0%, 100%": {
+            transform: "scale(1)",
+          },
+          "50%": {
+            transform: "scale(1.1)",
+          },
+        },
         "rainbow": {
           "0%": {
             "background-position": "0 0",
@@ -106,7 +114,7 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "gentle-breathe": "gentle-breathe 3s ease-in-out infinite",
+        "breathing": "breathing 4s ease-in-out infinite",
         "rainbow": "rainbow 20s linear infinite",
       },
     },
