@@ -1,5 +1,5 @@
 import { useState } from "react";
-import perspectivLogo from "@/assets/perspectiv-logo.png";
+import perspectivLogo from "@/assets/new-perspectiv-logo.png";
 
 interface FloatingButtonProps {
   onClick: () => void;
