@@ -15,8 +15,7 @@ export const FloatingButton = ({ onClick, isActive }: FloatingButtonProps) => {
         fixed bottom-6 right-6 z-50 
         w-16 h-16 rounded-full
         shadow-[0_0_30px_rgba(139,92,246,0.3)]
-        ${isActive ? 'scale-110' : isHovered ? 'scale-110' : 'animate-breathing'}
-        transition-all duration-300
+        ${isActive ? 'scale-110 transition-transform duration-300' : isHovered ? 'scale-110 transition-transform duration-300' : 'animate-breathing'}
       `}
     >
       <button
